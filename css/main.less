@@ -57,6 +57,7 @@ body{
 		position: absolute;
 		display: block;
 		white-space: nowrap;
+		padding-left: 32px;
 		&:first-of-type{
 			right: calc(1606px - (@a * 1px));
 			animation: marquee @delay-1 linear 0s infinite;
@@ -87,7 +88,7 @@ body{
 
 @time: 30s;
 @x: 1606;
-@a: 3263;
+@a: 3296;
 @delay-1: (@a/(@x + @a) * @time) * 1s;
 @delay-2: ((@a - @x)/(@x + @a) * @time) * 1s;
 @keyframes marquee{
