@@ -3,7 +3,7 @@
 	margin: 0 auto 0;
 	padding: 0 24px;
 	max-width: 1000px; //adjust for screen size
-	max-width: 1200px !important;
+	max-width: 1800px !important;
 	@media (min-width: 968px){
 		padding: 0 32px;
 		max-width: 800px;
@@ -22,7 +22,12 @@
 				max-width: 1200px;
 		}
 	}
+	&.center-ct{
+		position: relative;
+		transform: translateY(calc(50vh - 50%));
+	}
 }
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
@@ -96,7 +101,14 @@
 	flex: 0 0 75%;
 	max-width: 75%;
 }
-
+.col-10{
+	flex: 0 0 83.334%;
+	max-width: 83.334%;
+}
+.col-11{
+	flex: 0 0 91.667%;
+	max-width: 91.667%;
+}
 .col{
 	@media (max-width: 767px){
 		flex: 0 0 100%;
@@ -109,10 +121,34 @@
 		max-width: 100%;
 	}
 }
+.col-lg-10{
+	@media (max-width: 1200px){
+		flex: 0 0 83.334%;
+		max-width: 83.334%;
+	}
+}
+.col-lg-8{
+	@media (max-width: 1200px){
+		flex: 0 0 66.667%;
+		max-width: 66.667%;
+	}
+}
 .col-lg-6{
 	@media (max-width: 1200px){
 		flex: 0 0 50%;
 		max-width: 50%;
+	}
+}
+.col-lg-4{
+	@media (max-width: 1200px){
+		flex: 0 0 33.333%;
+		max-width: 33.333%;
+	}
+}
+.col-lg-2{
+	@media (max-width: 1200px){
+		flex: 0 0 16.666%;
+		max-width: 16.666%;
 	}
 }
 .col-md-12{
@@ -121,6 +157,14 @@
 		max-width: 100%;
 	}
 }
+
+.col-md-8{
+	@media (max-width: 991px){
+		flex: 0 0 66.667%;
+		max-width: 66.667%;
+	}
+}
+
 .col-md-6{
 	@media (max-width: 991px){
 		flex: 0 0 50%;
